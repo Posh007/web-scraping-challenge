@@ -5,7 +5,7 @@ import pandas as pd
 import datetime as dt
 from webdriver_manager.chrome import ChromeDriverManager
 
-
+#def initial_browser
 def scrape_all():
     # Initiate headless driver for deployment
     executable_path = {'executable_path': ChromeDriverManager().install()}
@@ -55,7 +55,6 @@ def mars_news(browser):
 
     return news_title, news_p
 
-
 def featured_image(browser):
     # Visit URL
     url = 'https://spaceimages-mars.com'
@@ -98,7 +97,6 @@ def mars_facts():
 
     # Convert dataframe into HTML format, add bootstrap
     return df.to_html(classes="table table-striped")
-
 
 def hemispheres(browser):
     url = 'https://marshemispheres.com/'
